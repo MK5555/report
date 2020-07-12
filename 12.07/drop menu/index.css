@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(markus-spiske-INJeQ2K4rEM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.menu-bar {
+    background: #F0FFF0;
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li {
+    width: 130px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background: #add8e6;
+    border-radius: 3px;
+}
+
+.sub-menu-home {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-home {
+    display: block;
+    position: absolute;
+    background: #add8e6;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.menu-bar ul li:hover .sub-menu-home ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-home ul li {
+    width: 130px;
+    margin: 5px;
+    padding: 5px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-home ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-home ul li a:hover {
+    color: aqua;
+}
+
+.sub-menu-home-2 {
+    display: none;
+}
+
+.drop:hover .sub-menu-home-2 {
+    position: absolute;
+    display: block;
+    margin-top: -20px;
+    margin-left: 100px;
+    background: #add8e6;
+}
